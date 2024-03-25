@@ -1,12 +1,13 @@
 {
   "name": "webperf-practice-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Installed Vite\r - Added \"preload\" to Google Fonts\r - Added lazy loading to non-slide images\r - Efficiently encode images Potential savings of 84 KiB\r - Serve images in next-gen formats Potential savings of 933 KiB\r - Eliminate render-blocking resources Potential savings of 370 ms\r - Largest Contentful Paint element 1,480 ms\r - Properly size images Potential savings of 159 KiB\r - Minify JavaScript Potential savings of 102 KiB\r - Reduce unused CSS Potential savings of 22 KiB\r - Ensure text remains visible during webfont load\r - Compressed mp4 video\r - Image elements do not have explicit width and height\r - Serve static assets with an efficient cache policy 24 resources found\r - Reduce unused JavaScript Potential savings of 53 KiB\r - Avoid enormous network payloads Total size was 3,935 KiB\r - Added decoding async to all images\r - Reduced the size of the first slide's image",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "concurrently \"vite build\" \"npm run preview\" \"npm run lighthouse\"",
+    "build:dev": "vite build",
     "preview": "vite preview",
     "lighthouse": "lighthouse http://localhost:4173 --quiet --output=html --output-path=report.html"
   },
