@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:prod": "pm2 start index.js --name webperf-practice-2-server",
+    "stop:prod": "pm2 stop webperf-practice-2-server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pm2": "^5.3.1"
   }
 }
