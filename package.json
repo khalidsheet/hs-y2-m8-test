@@ -1,36 +1,24 @@
 {
-  "name": "webperf-practice-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "name": "hs-y2-m8-test",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "concurrently \"vite build\" \"npm run preview\" \"npm run lighthouse\"",
-    "preview": "vite preview",
-    "lighthouse": "lighthouse http://localhost:4173 --quiet --output=html --output-path=report.html"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shershen08/webperf-practice-2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shershen08/webperf-practice-2/issues"
-  },
-  "homepage": "https://github.com/shershen08/webperf-practice-2#readme",
   "dependencies": {
-    "cssnano": "^6.1.1",
-    "terser": "^5.29.2",
-    "vite": "^5.2.2",
-    "vite-bundle-visualizer": "^1.1.0",
-    "vite-plugin-imagemin": "^0.6.1"
+    "next": "14.1.4",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "vite-plugin-webp-compress": "^1.1.4",
-    "wait-on": "^7.2.0"
+    "@types/node": "^20",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "typescript": "^5"
   }
 }
