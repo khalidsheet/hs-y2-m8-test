@@ -100,7 +100,7 @@ export const Footer = () => {
                 <form
                   className="booking-form row"
                   role="form"
-                  action="https://httpbin.org/post"
+                  action="/api/reserve"
                   method="post"
                 >
                   <div className="col-lg-6 col-12">
