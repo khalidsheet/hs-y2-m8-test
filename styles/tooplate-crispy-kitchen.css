@@ -295,6 +295,10 @@ strong {
   background-image: url("/images/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg");
 }
 
+.site-menu-header.cocktails {
+  background-image: url("/images/cocktails.png");
+}
+
 .site-news-header {
   background-image: url("/images/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg");
 }

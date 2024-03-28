@@ -9,6 +9,7 @@ import "@/js/bootstrap.min.js";
 import "@/js/custom";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <NextUIProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </NextUIProvider>
       </body>
     </html>
   );
